@@ -37,6 +37,11 @@
 			window.RS_MODULES.waiting = window.RS_MODULES.waiting.concat([ "mousetrap","particlewave","threejs"]);
 			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
 			window.RS_MODULES.type = 'compiled';
+
+			window.onload = function() {
+    document.getElementById('loading-overlay').style.display = 'none';
+};
+
 		</script>
 					<script src="js/rbtools.min.js"></script>
 							<script src="js/rs6.min.js"></script>
@@ -95,6 +100,11 @@
 		</head>
 		
 		<body>
+
+			<div id="loading-overlay">
+				<!-- You can place a spinner or any loading graphic here -->
+				<img src="assets/dummy.png" alt="Loading...">
+			</div>
 		
 
 			<!-- START Debby&#039;s REVOLUTION SLIDER 6.6.20 --><p class="rs-p-wp-fix"></p>
@@ -3182,7 +3192,24 @@ projects
 
 
 
-<style>body{margin:auto}#rev_slider_175_1_wrapper .hesperiden.tp-bullets{}#rev_slider_175_1_wrapper .hesperiden.tp-bullets:before{content:' ';position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box; border-radius:8px}#rev_slider_175_1_wrapper .hesperiden .tp-bullet{width:10px;height:10px;position:absolute;background:transparent;  background:-moz-linear-gradient(top,transparent 0%,transparent 100%);  background:-webkit-linear-gradient(top,transparent 0%,transparent 100%);  background:-o-linear-gradient(top,transparent 0%,transparent 100%);  background:-ms-linear-gradient(top,transparent 0%,transparent 100%);  background:linear-gradient(to bottom,transparent 0%,transparent 100%);  filter:progid:dximagetransform.microsoft.gradient(  startcolorstr='transparent',endcolorstr='transparent',gradienttype=0 ); border:2px solid rgba(255,255,255,0.2);border-radius:50%;cursor:pointer;box-sizing:content-box}#rev_slider_175_1_wrapper .hesperiden .tp-bullet.rs-touchhover,#rev_slider_175_1_wrapper .hesperiden .tp-bullet.selected{background:#ffffff}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-image{}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-title{}#rev_slider_175_1_wrapper rs-loader.spinner2{background-color:#0008ff !important}@font-face{font-family:'Material Icons'; font-style:normal; font-weight:400; src:url(//fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')}rs-module .material-icons{font-family:'Material Icons'; font-weight:normal; font-style:normal;font-size:inherit; display:inline-block; text-transform:none; letter-spacing:normal; word-wrap:normal; white-space:nowrap; direction:ltr; vertical-align:top; line-height:inherit; font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -moz-osx-font-smoothing:grayscale}</style>
+<style>
+
+#loading-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+
+
+body{margin:auto}#rev_slider_175_1_wrapper .hesperiden.tp-bullets{}#rev_slider_175_1_wrapper .hesperiden.tp-bullets:before{content:' ';position:absolute;width:100%;height:100%;background:transparent;padding:10px;margin-left:-10px;margin-top:-10px;box-sizing:content-box; border-radius:8px}#rev_slider_175_1_wrapper .hesperiden .tp-bullet{width:10px;height:10px;position:absolute;background:transparent;  background:-moz-linear-gradient(top,transparent 0%,transparent 100%);  background:-webkit-linear-gradient(top,transparent 0%,transparent 100%);  background:-o-linear-gradient(top,transparent 0%,transparent 100%);  background:-ms-linear-gradient(top,transparent 0%,transparent 100%);  background:linear-gradient(to bottom,transparent 0%,transparent 100%);  filter:progid:dximagetransform.microsoft.gradient(  startcolorstr='transparent',endcolorstr='transparent',gradienttype=0 ); border:2px solid rgba(255,255,255,0.2);border-radius:50%;cursor:pointer;box-sizing:content-box}#rev_slider_175_1_wrapper .hesperiden .tp-bullet.rs-touchhover,#rev_slider_175_1_wrapper .hesperiden .tp-bullet.selected{background:#ffffff}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-image{}#rev_slider_175_1_wrapper .hesperiden .tp-bullet-title{}#rev_slider_175_1_wrapper rs-loader.spinner2{background-color:#0008ff !important}@font-face{font-family:'Material Icons'; font-style:normal; font-weight:400; src:url(//fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2')}rs-module .material-icons{font-family:'Material Icons'; font-weight:normal; font-style:normal;font-size:inherit; display:inline-block; text-transform:none; letter-spacing:normal; word-wrap:normal; white-space:nowrap; direction:ltr; vertical-align:top; line-height:inherit; font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -moz-osx-font-smoothing:grayscale}</style>
 <script async="" defer="" src="js/revolution.addon.mousetrap.min.js"></script><script async="" defer="" src="js/revolution.addon.particlewave.min.js"></script><script async="" defer="" src="https://www.ourplaceintheworld.sg/wp-content/plugins/revslider/public/assets/js/libs/three.min.js"></script><script type="text/javascript">window.RVS = window.RVS || {}; window.RVS.ENV = window.RVS.ENV || {}; window.RVS.ENV.TRANSITIONPACK_URL = "https://www.ourplaceintheworld.sg/wp-content/plugins/revslider-transitionpack-addon/";</script>
 		</body>
 				</html>
