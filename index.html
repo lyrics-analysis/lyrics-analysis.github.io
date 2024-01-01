@@ -7,7 +7,7 @@
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>De4bby&#039;s - Slider Revolution</title>
+			<title>De5bby&#039;s - Slider Revolution</title>
 			<meta name="description" content="Slider Revolution Example" />
 			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
 			<meta name="author" content="ThemePunch" />
@@ -3241,12 +3241,7 @@ projects
 									allowHTML5AutoPlayOnAndroid:true
 								},
 						});
-							window.addEventListener('load', function() {
-   document.body.style.display = 'none';
-   document.body.offsetHeight; // Trigger reflow
-   document.body.style.display = '';
-});
-
+	
 						
                 		if(typeof RSMousetrap !== "undefined") RSMousetrap(revapi175);
 
@@ -3256,14 +3251,23 @@ projects
 					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
 				</script>
 
+				<!-- JavaScript to trigger a repaint/reflow -->
+				<script>
+					window.onload = function() {
+						// Trigger reflow/repaint by toggling the body's display property
+						document.body.style.display = 'none';
+						document.body.offsetHeight; // Force the browser to flush the layout
+						document.body.style.display = '';
+
+						console.log('Page reflow/repaint triggered!');
+					};
+				</script>
+
+
 
 
 <style>body{margin:auto}
 
-
-rs-slides, rs-slide, rs-slide:before {
-	top: -80px !important;
-}
 
 
 
